@@ -1,0 +1,112 @@
+#about {
+    padding-block: 100px;
+    background: #fdfdfd;
+    position: relative;
+    overflow: hidden;
+}
+
+#about * {
+    z-index: 10;
+}
+
+.about__shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__card {
+    background: white;
+    column-gap: 60px;
+    padding: 40px 160px 40px 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: 10px 30px 60px 0px rgba(198, 202, 219, 0.126);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.about__card:hover {
+    box-shadow: 15px 30px 60px 0px rgba(54, 56, 63, 0.15);
+}
+
+.about__card-circle {
+    height: 30px;
+    aspect-ratio: 1;
+    background: #1bbf00;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: relative;
+}
+
+.about__card-circle::after {
+    content: "";
+    height: 30px;
+    aspect-ratio: 1;
+    background: #cbc8f0;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+.about__card-content p {
+    color: #726e9e;
+    font-family: Paprika;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.about__content p {
+    color: #726e9e;
+    font-family: Paprika;
+    font-size: 20px;
+    line-height: 46px;
+    margin-block: 50px;
+}
+
+@media (max-width: 575px) {
+    .about__card {
+        flex-direction: column;
+        padding: 30px 15px;
+        row-gap: 30px;
+    }
+    .about__card-circle {
+        align-self: flex-start;
+    }
+    .about__content {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .about__card {
+        padding: 30px 15px;
+        row-gap: 30px;
+    }
+    .about__content {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about__card {
+        padding: 30px 15px;
+        row-gap: 30px;
+    }
+}

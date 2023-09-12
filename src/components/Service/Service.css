@@ -1,0 +1,117 @@
+#service {
+    background: #f6f5ff;
+    padding-block: 100px;
+}
+
+#service .section-header {
+    margin-top: 20px;
+}
+
+.service__content-description {
+    color: #6c7d93;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    margin-block: 25px 50px;
+}
+
+.service__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background: white;
+    padding: 50px 55px 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: 0px 30px 60px 0px rgba(77, 80, 89, 0.1);
+}
+
+.service__card:hover {
+    background: #6b62c5;
+}
+
+.service__card:hover .service__card-heading {
+    color: #fafafe;
+}
+
+.service__card:hover .service__card-content {
+    color: #e6e5f3;
+}
+
+.service__card:hover .custom-link {
+    color: #e6e5f3;
+}
+
+.service__card:hover .custom-link::after {
+    background: #fff;
+}
+
+.service__card-heading {
+    color: #141135;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-block: 32px 16px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.service__card-content {
+    color: #726e9e;
+    font-family: Paprika;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@media (max-width: 575px) {
+    .service__content {
+        text-align: center;
+    }
+    .service__card {
+        padding-inline: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .service__content {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service__card {
+        padding-inline: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .service__card {
+        padding-inline: 15px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .service__card {
+        padding-inline: 15px;
+    }
+}

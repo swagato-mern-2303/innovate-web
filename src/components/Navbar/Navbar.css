@@ -1,0 +1,32 @@
+.navbar {
+    background: hsla(246, 80%, 15%, 0.5);
+}
+
+nav ul {
+    width: 60%;
+    text-align: center;
+}
+
+.nav-link {
+    color: #eff4fa;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #1bbf00;
+}
+
+@media (max-width: 992px) {
+    .offcanvas {
+        height: 100vh;
+        background: hsla(191, 100%, 50%, 0.226);
+        backdrop-filter: blur(15px);
+    }
+}
